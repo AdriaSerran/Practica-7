@@ -1,6 +1,6 @@
 # Practica-7 BUSES DE COMUNICACIÓN II
 
-Les dades de so s'emmagatzemen com una matriz a la memòria RAM interna del nostre ESP32. 
+Les dades de so s'emmagatzemen un una matriu a la memòria RAM interna del nostre ESP32. 
 I tot seguit utilitzem el protocol I2S (a través de la placa de connexió d'àudio) per a generar les dedas de so digital sense tenir pèrdues de qualitat
 
 # Material
