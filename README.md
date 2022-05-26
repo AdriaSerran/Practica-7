@@ -9,7 +9,7 @@ I tot seguit utilitzem el protocol I2S (a través de la placa de connexió d'àu
 - Placa de connexió d'àudio MAX98357 I2S
 - Altaveu
 
-#Funcionament
+# Funcionament
 
 Com podem observar al principi del codi, hem hagut de fer #include de diverses llibreries i capçaleres, una d'aquestes ñes el sampleaac.h,
 per aconseguir que ens funcionés hem hagut d'afegir llibreries i ens ha creat un nou document al nostre src, com es pot comprovar al repositori.
