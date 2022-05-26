@@ -26,6 +26,34 @@ Tot seguit, com es pot observar al codi, hem declarat els paràmetres d'etrada, 
 
 Abans que es reprodueixi per l'altaveu hem d'establir un guany i assignar uns pins. El guany l'hem posat de 0.125 i hem establert els pins 26, 25 i 22.
 
+```c++
+AudioFileSourcePROGMEM *in;
+AudioGeneratorAAC *aac;
+AudioOutputI2S *out;
+
+void setup(){
+Serial.begin(115200);
+  in = new AudioFileSourcePROGMEM(sampleaac, sizeof(sampleaac));
+  aac = new AudioGeneratorAAC();
+  out = new AudioOutputI2S();
+  out -> SetGain(0.125);
+  out -> SetPinout(26,25,22);
+  aac->begin(in, out);
+}
+```
+
 Com veiem al final del loop, cada vegada que se'ns reprodueixi el so ens apareixerà "Sound Generator" per la sortida del port sèrie.
+
+```c++
+void loop(){
+  if (aac->isRunning()) {
+    aac->loop();
+  } else {
+    aac -> stop();
+    Serial.printf("Sound Generator\n");
+    delay(1000);
+  }
+}
+```
 
 Tot es pot veure al vídeo adjuntat al repositori.
