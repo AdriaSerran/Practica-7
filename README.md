@@ -56,4 +56,9 @@ void loop(){
 }
 ```
 
-Tot es pot veure al vídeo adjuntat al repositori.
+
+
+
+https://user-images.githubusercontent.com/101885469/171157637-309864f4-1c92-44a5-aa5d-fb433300ccd5.mp4
+
+
